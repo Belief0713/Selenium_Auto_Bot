@@ -12,7 +12,7 @@ element = driver.find_element(By.LINK_TEXT, "More information...")
 element.click()
 
 wait = WebDriverWait(driver, 10)
-element = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@href='/domains']"))) # Wait until Domain content loading finish
+element = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@href='/domains']")))
 element.click()
 
 time.sleep(3)
